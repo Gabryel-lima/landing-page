@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Viaje junto. Economize mais. Preserve o planeta.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        :root {
+            --primary: #2B7A0B;
+            --secondary: #A6D785;
+            --background: #FFFFFF;
+            --text: #666666;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text);
+        }
+        
+        .bg-primary {
+            background-color: var(--primary);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .bg-secondary {
+            background-color: var(--secondary);
+        }
+        
+        .text-secondary {
+            color: var(--secondary);
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(43, 122, 11, 0.9), rgba(43, 122, 11, 0.8)), url('https://images.unsplash.com/photo-1502224562085-639556652f33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.02);
+        }
+        
+        .step-number {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: bold;
+        }
+        
+        .leaf-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4zM10 10c0-2.21 1.79-4 4-4s4 1.79 4 4-1.79 4-4 4-4-1.79-4-4z' fill='%232b7a0b' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="text-primary font-bold text-2xl mr-2">
+                        <i class="fas fa-leaf mr-2"></i>EcoRide
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-primary">Recursos</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-primary">Como Funciona</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary">Depoimentos</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary">Sobre</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary">Contato</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-600 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white py-20 md:py-32">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Viaje junto. Economize mais. Preserve o planeta.</h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto">Conecte-se a pessoas próximas, compartilhe sua viagem e ajude o meio ambiente.</p>
+            <a href="#download" class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 inline-block">
+                Baixar App <i class="fas fa-arrow-down ml-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 leaf-pattern">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Recursos Exclusivos</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Economia Garantida</h3>
+                    <p class="text-gray-600">Divisão automática de custos para que todos paguem sua parte justa.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Rota Inteligente</h3>
+                    <p class="text-gray-600">Algoritmo que traça o melhor caminho otimizando tempo e consumo de combustível.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Verificação de Usuários</h3>
+                    <p class="text-gray-600">Perfis com avaliações e feedbacks para garantir viagens seguras.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition duration-300">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Impacto Ambiental</h3>
+                    <p class="text-gray-600">Painel interativo que mostra CO₂ economizado a cada carona.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Como Funciona</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="step-number bg-primary text-white mx-auto mb-4">1</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cadastro Rápido</h3>
+                    <p class="text-gray-600">Crie sua conta em menos de 1 minuto.</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="step-number bg-primary text-white mx-auto mb-4">2</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Publique sua Rota</h3>
+                    <p class="text-gray-600">Informe ponto de partida e destino.</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="step-number bg-primary text-white mx-auto mb-4">3</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Combine Detalhes</h3>
+                    <p class="text-gray-600">Defina horário e local de encontro.</p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="text-center">
+                    <div class="step-number bg-primary text-white mx-auto mb-4">4</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Avalie sua Viagem</h3>
+                    <p class="text-gray-600">Dê feedback ao parceiro de viagem.</p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <a href="#download" class="bg-primary text-white font-bold py-3 px-8 rounded-full hover:bg-green-800 transition duration-300 inline-block">
+                    Comece Agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">O Que Dizem Nossos Usuários</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Ana Silva" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ana Silva</h4>
+                            <p class="text-gray-500 text-sm">Estudante</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Reduzi meus gastos semanais em 40% com EcoRide!"</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Pereira" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Carlos Pereira</h4>
+                            <p class="text-gray-500 text-sm">Designer</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"A interface é intuitiva e o algoritmo de rota é fantástico."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Mariana Souza" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mariana Souza</h4>
+                            <p class="text-gray-500 text-sm">Engenheira</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Adoro monitorar meu impacto ambiental no painel."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1532635241-17ec820b5df8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="EcoRide Mission" class="rounded-lg shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nossa Missão</h2>
+                    <p class="text-gray-600 mb-6 text-lg">Promover a mobilidade sustentável e a economia colaborativa nas cidades.</p>
+                    <p class="text-gray-600 mb-6">A EcoRide nasceu da necessidade de reduzir o número de carros nas ruas, diminuir a emissão de poluentes e criar uma comunidade de pessoas que compartilham valores de sustentabilidade e economia.</p>
+                    <p class="text-gray-600">Nossa plataforma conecta pessoas que fazem trajetos semelhantes, permitindo que compartilhem caronas de forma segura, econômica e ecologicamente responsável.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Pré-Cadastro</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium mb-1">Nome Completo</label>
+                        <input type="text" id="name" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70">
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-sm font-medium mb-1">E-mail</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70">
+                    </div>
+                    
+                    <div>
+                        <label for="city" class="block text-sm font-medium mb-1">Cidade</label>
+                        <input type="text" id="city" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-10 border border-white border-opacity-20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50 placeholder-white placeholder-opacity-70">
+                    </div>
+                    
+                    <div class="pt-4">
+                        <button type="submit" class="w-full bg-white text-primary font-bold py-3 px-6 rounded-lg hover:bg-gray-100 transition duration-300">
+                            Quero testar grátis <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Baixe o App EcoRide</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">Disponível para iOS e Android. Economize hoje mesmo!</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#" class="bg-black text-white px-8 py-3 rounded-lg flex items-center justify-center hover:bg-gray-900 transition duration-300">
+                    <i class="fab fa-apple text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <div class="text-xs">Baixar na</div>
+                        <div class="text-lg font-semibold">App Store</div>
+                    </div>
+                </a>
+                
+                <a href="#" class="bg-black text-white px-8 py-3 rounded-lg flex items-center justify-center hover:bg-gray-900 transition duration-300">
+                    <i class="fab fa-google-play text-2xl mr-3"></i>
+                    <div class="text-left">
+                        <div class="text-xs">Disponível no</div>
+                        <div class="text-lg font-semibold">Google Play</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="text-primary font-bold text-2xl mb-2">
+                        <i class="fas fa-leaf mr-2"></i>EcoRide
+                    </div>
+                    <p class="text-gray-400">© 2025 EcoRide. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="flex space-x-6 mb-6 md:mb-0">
+                    <a href="https://facebook.com/ecoride" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="https://instagram.com/ecoride" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://linkedin.com/company/ecoride" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+                
+                <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-sm">
+                    <a href="#terms" class="text-gray-400 hover:text-white transition duration-300">Termos de Uso</a>
+                    <a href="#privacy" class="text-gray-400 hover:text-white transition duration-300">Política de Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
